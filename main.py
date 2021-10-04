@@ -33,6 +33,7 @@ def test_get_perfect_squares():
     assert get_perfect_squares(2, 20) == [4, 9, 16]
     assert get_perfect_squares(start=20, end=40) == [25, 36]
     assert get_perfect_squares(100, 170) == [100, 121, 144, 169]
+    assert get_perfect_squares(10,30) == [16,25]
 
 
 if __name__ == '__main__':
