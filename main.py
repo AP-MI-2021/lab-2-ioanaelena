@@ -37,12 +37,12 @@ def test_get_perfect_squares():
 
 #Problema 5
 def is_palindrome(n):
-    cop=n;
-    pal=0;
-    while n!=0
+    cop=n
+    pal=0
+    while n!=0 :
         c=n%10
-        pal=pal * 10 + c;
-        n=n//10;
+        pal=pal * 10 + c
+        n=n//10
     if pal == cop :
         return True
     else
