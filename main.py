@@ -33,26 +33,26 @@ def test_get_perfect_squares():
     assert get_perfect_squares(2, 20) == [4, 9, 16]
     assert get_perfect_squares(start=20, end=40) == [25, 36]
     assert get_perfect_squares(100, 170) == [100, 121, 144, 169]
-    assert get_perfect_squares(10,30) == [16,25]
+    assert get_perfect_squares(10, 30) == [16, 25]
 
-#Problema 5
+
+# Problema 5
 def is_palindrome(n):
-    cop=n
-    pal=0
-    ok=1
-    while n!=0 :
-        c=n%10
-        pal=pal * 10 + c
-        n=n//10
-    if pal == cop :
-
-    else :
+    cop = n
+    pal = 0
+    while n != 0:
+        c = n % 10
+        pal = pal * 10 + c
+        n = n // 10
+    if pal == cop:
+        return True
+    else:
         return False
 
-def test_is_palindrome() :
+
+def test_is_palindrome():
     assert is_palindrome(232) is True
     assert is_palindrome(25) is False
-
 
 
 if __name__ == '__main__':
